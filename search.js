@@ -6,7 +6,7 @@ $(document).ready(function(){
         $(".profilelist li").each(function(){
  
             if ($(this).text().search(new RegExp(filter, "i")) < 0) {
-                $(this).fadeOut();
+                $(this).hide();
  
             } else {
                 $(this).show();
