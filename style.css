@@ -1,126 +1,89 @@
+body {
+  font: 15px/1.33 Lato, 'LiberationSansRegular', 'Liberation Sans', Arial, 'Helvetica Neue', FreeSans, sans-serif;
+  margin: 0;
+  color: #193559;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 h1 {
-	border-bottom-color: #F28627;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    font-size: 2em;
+  font-size: 2em;
+  border-bottom: 2px solid #f28627;
 }
-button, input[type="submit"] {
-	float: right;
+h1 .favourite, h1 .unfavourite {
+  padding-left: 1em;
 }
-.filterinput {
-	width: 100%;
+h2 {
+  font-size: 1.5em;
 }
-ul.list{
-	list-style:none;
+h3 {
+  margin-top: 1em;
 }
-#search {
-	width: 100%;
+h4 {
+  margin-bottom: 0;
+  border-bottom: 2px solid lightgrey;
 }
-#quick-profile { 
-	    background-color: white;
-	    border-bottom-color: #D3D3D3;
-	    border-bottom-style: solid;
-	    border-bottom-width: 1px;
-	    border-left-color-value: #D3D3D3;
-	    border-left-style-value: solid;
-	    border-left-width-value: 1px;
-	    border-right-color-value: #D3D3D3;
-	    border-right-style-value: solid;
-	    border-right-width-value: 1px;
-	    border-top-color: #D3D3D3;
-	    border-top-style: solid;
-	    border-top-width: 1px;
-	    box-shadow: 1px 1px 2px #444444;
-	    display: table;
-	    font-size: 0.9em;
-	    min-height: 40px;
-	    padding-bottom: 0.3em;
-	    padding-left: 0.3em;
-	    padding-right: 0.3em;
-	    padding-top: 0.3em;
-	    width: 208px;
-		list-style:none;
-		margin-top: -105px;
-		margin-left: 70px;
+h1, h2, h3 {
+  clear: both;
+  text-shadow: 0 2px 2px lightgray;
 }
-#quick-profile2 { 
-	    background-color: white;
-	    border-bottom-color: #D3D3D3;
-	    border-bottom-style: solid;
-	    border-bottom-width: 1px;
-	    border-left-color-value: #D3D3D3;
-	    border-left-style-value: solid;
-	    border-left-width-value: 1px;
-	    border-right-color-value: #D3D3D3;
-	    border-right-style-value: solid;
-	    border-right-width-value: 1px;
-	    border-top-color: #D3D3D3;
-	    border-top-style: solid;
-	    border-top-width: 1px;
-	    box-shadow: 1px 1px 2px #444444;
-	    display: table;
-	    font-size: 0.9em;
-	    min-height: 40px;
-	    padding-bottom: 0.3em;
-	    padding-left: 0.3em;
-	    padding-right: 0.3em;
-	    padding-top: 0.3em;
-	    width: 208px;
-		list-style:none;
+h2, h3 {
+  border-bottom: 2px solid lightgrey;
 }
-#quick-profile3 { 
-	    background-color: white;
-	    border-bottom-color: #D3D3D3;
-	    border-bottom-style: solid;
-	    border-bottom-width: 1px;
-	    border-left-color-value: #D3D3D3;
-	    border-left-style-value: solid;
-	    border-left-width-value: 1px;
-	    border-right-color-value: #D3D3D3;
-	    border-right-style-value: solid;
-	    border-right-width-value: 1px;
-	    border-top-color: #D3D3D3;
-	    border-top-style: solid;
-	    border-top-width: 1px;
-	    box-shadow: 1px 1px 2px #444444;
-	    display: table;
-	    font-size: 0.9em;
-	    min-height: 40px;
-	    padding-bottom: 0.3em;
-	    padding-left: 0.3em;
-	    padding-right: 0.3em;
-	    padding-top: 0.3em;
-	    width: 208px;
-		list-style:none;
+.quicksearch {
+  width: 100%;
 }
-#text {
-	margin-left: 70px;
-	margin-top: -105px;
+.quicksearch td, .quicksearch th {
+  padding: 0.3em;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.quicksearch-table * { 
-	padding: 0px;
-	margin: 0px;
+.quicksearch tbody tr:nth-child(2n) {
+  background-color: #cae0ed;
 }
-.quicksearch-table td {
-	background-color: #f8f8f8;
-	padding: 5px;
+.quicksearch tbody tr:nth-child(2n+1) {
+  background-color: #f8f8f8;
 }
-.quicksearch-table .source img {
-    display: inline-block;
-    margin-right: 1em;
-    vertical-align: top;
+.quicksearch tbody tr td {
+  font-size: 150%;
 }
-.quicksearch-table .source .result {
-    display: inline-block;
-    width: 90%;
+.quicksearch tbody tr td:first-child {
+  font-size: 100%;
 }
-.title {
-		font-size: 23px;
-		font-family: arial;
-		margin-bottom: 5px;
+.quicksearch th {
+  text-align: center;
+  font-weight: bold;
 }
-.description { 
-		font-size: 15px;
-		font-family: arial;
+.quicksearch th img {
+  width: 32px;
+  height: 32px;
+}
+.quicksearch tr th:first-child, .quicksearch tr td:first-child {
+  text-align: left;
+  min-width: 75%;
+  width: 80%;
+}
+.quicksearch .source {
+  vertical-align: top;
+}
+.quicksearch .source .title {
+  font-size: 120%;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+.quicksearch .source img {
+  margin-right: 1em;
+  vertical-align: top;
+  display: inline-block;
+}
+.quicksearch .source .item {
+  display: inline-block;
+  width: 90%;
+}
+.quicksearch .source .item-description {
+  margin: 0;
+}
+.quicksearch .source .item-description > * {
+  padding: 0;
+  margin: 0;
 }
