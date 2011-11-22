@@ -98,7 +98,6 @@ h2, h3 {
 	float: left;
 	background: #fff;
 	width: 500px;
-	padding-top: 4px;
 }
 #tabs li {
 	margin-left: 8px;
@@ -111,8 +110,8 @@ h2, h3 {
 	float: left;
 }
 #tabs ul li.active {
-	border-top:2px #FFFF66 solid;
-	background: #FFFFCC;
+	border-top:2px #F8F8F8 solid;
+	background: #F8F8F8;
 }
 #tabs ul li.active a {
 	color: #333333;
@@ -134,10 +133,4 @@ h2, h3 {
 	padding: 8px;
 	color: #000;
 	font-weight: bold;
-}
-.thumbs {
-	float:left;
-	border:#000 solid 1px;
-	margin-bottom:20px;
-	margin-right:20px;
 }
