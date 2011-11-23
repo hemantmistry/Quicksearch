@@ -2,15 +2,16 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="search.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('#tabs div').hide();
 	$('#tabs div:first').show();
 	$('#tabs ul li:first').addClass('active');
-	$('#tabs ul li a').click(function(){ 
-		$('#tabs ul li').removeClass('active');
-		$(this).parent().addClass('active'); 
+	$('#tabs ul li a').click(function(){ 	
+	$('#tabs ul li').removeClass('active');
+	$(this).parent().addClass('active'); 
+		
 		var currentTab = $(this).attr('href'); 
 		$('#tabs div').hide();
 		$(currentTab).show();
@@ -188,44 +189,45 @@ $(document).ready(function(){
 									
 						
 						<!--tabs with comment-->
+						<table class="quicksearch"> 
 						
-											  <div id="tabs">
-											    <ul>
-											      <li><a href="#tab-1">Comments</a></li>
-											      <li><a href="#tab-2">Keywords</a></li>
-											    </ul>
+									  	<div id="tabs">
+										   <ul>
+											   <li><a href="#tab-1">Comments</a></li>
+											   <li><a href="#tab-2">Keywords</a></li>
+										  </ul>
 											
-											    <div id="tab-1">
-											      <h3>Comments</h3>
-												<table class="quicksearch"> 
+											<div id="tab-1">
+											<table class="quicksearch"> 
 
-
-													<table class="quicksearch"> 
-
-
-														<tbody><tr>
-															<td>
-															<section class="source">
+											<tbody>
+												<tr>
+													<td>
+														<section class="source">
 															<img src="https://wazoku-static.s3.amazonaws.com/pictures/profile/unknown/thumbnail.png">
-															<article class="item">
+														<article class="item">
 															<p class="title"><a href="http://local.wazoku.com:8000/user/0a141842ac8a42ffac3f5f61fe715959">Yes, I really can comment on my own test ideas!</a></p>
 															<div class="item-description">
-																<p>Comment on something or another we can't easily find out :(</p>
+															<p>Comment on something or another we can't easily find out :(</p>
 															</div>
-															</article></section>
-															</td>
-														</tr>
-
-
-													</tbody></table>
-											      
-											    </div>
-											   </div>
+														</article>
+														</section>
+													</td>
+												</tr>
+														
+												<div id="tab-2">
+																		   
+												</div>
+											</div>
+										</div>
 						
-				
+									</tbody>
+									<table>
 			
 				
-	</body>
+</body>
 </html>
 	
+	
+
 
