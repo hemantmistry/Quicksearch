@@ -222,7 +222,49 @@ $(document).ready(function(){
 										</div>
 						
 									</tbody>
-									<table>
+									</table>
+		
+		
+		
+									<script type="text/javascript">
+									<!--
+									$(document).ready(function() {
+
+										$('.tabs a').click(function(){
+											switch_tabs($(this));
+										});
+
+										switch_tabs($('.defaulttab'));
+
+									});
+
+									function switch_tabs(obj)
+									{
+										$('.tab-content').hide();
+										$('.tabs a').removeClass("selected");
+										var id = obj.attr("rel");
+
+										$('#'+id).show();
+										obj.addClass("selected");
+									}
+									//-->
+									</script>
+	
+									
+					<div id="wrapper">
+						
+							<ul class="tabs">
+								<li><a href="#" class="defaulttab" rel="tabs1">Comment</a></li>
+								<li><a href="#" rel="tabs2">Keywords</a></li>
+							<ul>
+								
+							<div class="tab-content" id="tabs1">Tab #1 content</div>
+							<div class="tab-content" id="tabs2">Tab #2 content</div>
+						</div>
+						
+					
+							
+								
 			
 				
 </body>
